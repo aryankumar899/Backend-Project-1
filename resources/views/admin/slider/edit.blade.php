@@ -23,7 +23,7 @@
           <div class="card-header">Edit Slider</div>
           <div class="card-body">
 
-          <form action=""  method="POST"  enctype="multipart/form-data">
+          <form action="{{ route('update.slider') }}"  method="POST"  enctype="multipart/form-data">
             @csrf
   <div class="mb-4">
    

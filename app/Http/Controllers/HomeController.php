@@ -70,7 +70,9 @@ class HomeController extends Controller
   public function Edit($id){
     $slider=slider::find($id);
     return view('admin.slider.edit',compact('slider'));
+    
   }
+  
 
 }
 

@@ -89,7 +89,9 @@ Route::post('/store/slider', [HomeController::class, 'StoreSlider'])->name('stor
 Route::get('/slider/delete/{id}', [HomeController::class, 'Delete']);
 Route::get('/slider/edit/{id}', [HomeController::class, 'Edit']);
 Route::post('/slider/update/{id}', [HomeController::class, 'Update']);
-Route::post('/slider/update/{id}', [HomeController::class, 'Update']);
+// Route::post('/slider/update/{id}', [HomeController::class, 'Update']);
+
+
 
 Route::get('/about/home', [AboutController::class, 'HomeAbout'])->name('home.about');
 Route::get('/about/add', [AboutController::class, 'AboutAdd'])->name('add.home');
@@ -105,7 +107,7 @@ Route::get('/services/add', [AboutController::class, 'ServicesAdd'])->name('add.
 Route::post('/store/services', [AboutController::class, 'StoreServices'])->name('store.services');
 Route::get('/service/delete/{id}', [AboutController::class, 'DeleteServices']);
 Route::get('/service/edit/{id}', [AboutController::class, 'EditServices']);
-Route::post('update/home-services/{id}', [AboutController::class, 'UpdateServices']);
+Route::post('/update/home-services/{id}', [AboutController::class, 'UpdateServices']);
 
 
 //portfolio
